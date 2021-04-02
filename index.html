@@ -7,11 +7,37 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Underdog Rescue</h1>
-    <div id="container">
-        
+    <div class="greeting">
+        <h1>Underdog Rescue</h1>
+    </div>
+    
+    <div class="container">
+        <h3>Available Pets</h3>
+        <p>Click photo to see more info</p>
+            <div id="allPets">
+
+            </div>
     </div>
 
+    <div class="addPet">
+        <form action="#" method="post">
+            <label for="petName">Name</label>
+            <input type="text" name="Name" id="new-pet"/>
+            <br>
+            <label for="petAbout">Description</label>
+            <input type="text" name="Description" id="about-pet"/>
+            <br>
+            <label for="petPic">Photo</label>
+            <input type="text" name="petPic" id="img_url"/>
+            <br>
+            <select id="users" name="users">
+                <option value="33">Erin</option>
+            </select>
+            <input type="submit" value="Add Pet"/><br>
+        </form>
+    </div>
+
+    <script src="javascripts/pet.js"></script>
     <script src="javascripts/index.js"></script>
     
 </body>
