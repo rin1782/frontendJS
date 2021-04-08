@@ -7,35 +7,36 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="greeting">
+    <div id="greeting">
         <h1>Underdog Rescue</h1>
     </div>
     
-    <div class="container">
+    <div id="petsContainer">
         <h3>Available Pets</h3>
-        <p>Click photo to see more info</p>
-            <div id="allPets">
+            <form id="pet-form">
+                <div class="input">
+                    <label for="petName">Name</label>
+                    <input type="text" name="Name" id="new-pet"/>
+                    <br>
+                    <label for="petAbout">Description</label>
+                    <input type="text" name="Description" id="new-pet-desc"/>
+                    <br>
+                    <label for="petPic">Photo</label>
+                    <input type="text" name="petPic" id="new-pet-pic"/>
+                    <br>
+                    <select id="users" name="users">
+                        <option value="${this.users.id}">Erin</option>
+                    </select>
+                    <input type="submit" value="Add Pet" id="add-pet"/><br>
+                </div>
+            </form>
 
-            </div>
+    <div id="newPets">
     </div>
 
-    <div class="addPet">
-        <form action="#" method="post">
-            <label for="petName">Name</label>
-            <input type="text" name="Name" id="new-pet"/>
-            <br>
-            <label for="petAbout">Description</label>
-            <input type="text" name="Description" id="about-pet"/>
-            <br>
-            <label for="petPic">Photo</label>
-            <input type="text" name="petPic" id="img_url"/>
-            <br>
-            <select id="users" name="users">
-                <option value="33">Erin</option>
-            </select>
-            <input type="submit" value="Add Pet"/><br>
-        </form>
-    </div>
+    
+
+    
 
     <script src="javascripts/pet.js"></script>
     <script src="javascripts/index.js"></script>
