@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Shop to Adopt</title>
 </head>
 <body>
     <div id="greeting">
         <h1>Underdog Rescue</h1>
+        <h2>Available Pets:</h2>
     </div>
     
+    
     <div id="petsContainer">
-        <h3>Available Pets</h3>
-            <form id="pet-form">
-                <div class="input">
-                    <label for="petName">Name</label>
-                    <input type="text" name="Name" id="new-pet"/>
-                    <br>
-                    <label for="petAbout">Description</label>
-                    <input type="text" name="Description" id="new-pet-desc"/>
-                    <br>
-                    <label for="petPic">Photo</label>
-                    <input type="text" name="petPic" id="new-pet-pic"/>
-                    <br>
-                    <select id="users" name="users">
-                        <option value="${this.users.id}">Erin</option>
-                    </select>
-                    <input type="submit" value="Add Pet" id="add-pet"/><br>
-                </div>
-            </form>
+    </div>
 
     <div id="newPets">
+        <h3>Add new pup:</h3>
+        <form id="pet-form">
+            <div class="input">
+                <label for="petName">Name</label>
+                <input type="text" name="Name" id="new-pet"/>
+                <br>
+                <label for="petAbout">Description</label>
+                <input type="text" name="Description" id="new-pet-desc"/>
+                <br>
+                <label for="petPic">Photo</label>
+                <input type="text" name="petPic" id="new-pet-pic"/>
+                <br>
+                <select id="users" name="users">
+                    <option value="${this.users.id}">Erin</option>
+                </select>
+                <input type="submit" value="Add Pet" id="add-pet"/><br>
+            </div>
+        </form>
     </div>
 
     

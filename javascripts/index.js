@@ -11,11 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
         container.innerHTML = data.pets.map(pet => {
             return `
         <div data-id="${pet.user.id}">
-            <h2 class="name">${pet.name}</h2>
-            <h4>${pet.about}</h4>
-            <img src="${pet.img_url}" height=250px width=300px/>
-        </div>
-        <button class="delete" data-id="${pet.user.id}">Delete</button>
+            <img src="${pet.img_url}" style="border-radius:30%", height=250px width=300px/>
+            <span style="float:right,color:white">
+            <h1>${pet.name}</h1>
+            <p>${pet.about}</p>
+            </span>
+            </div>
         `;
         })
     })

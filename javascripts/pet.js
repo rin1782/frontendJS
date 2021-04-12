@@ -9,53 +9,45 @@ class Pet{
         this.about = about
         this.img_url = img_url
         this.user_id = user_id
-
-        this.element = document.createElement('li')
-        this.element.dataset["id"] = id
-        this.element.id = `${id}`
-
         
 
         Pet.all.push(this)
     }
 }
 
-// creatPet(){
-//     const p = new Pet({id: pet.id, name: pet.name, about: pet.about, img_url: pet.img_url, user_id: pet.user_id})
-//     p.attachToDom()
+    
+ 
+
+// function renderPet(){
+//     const p = new Pet({id: p.id, name: p.name, about: p.about, img_url: p.img_url, user_id: p.user_id})
+//     container.innerHTML = `
+//         <div data-id="${p.id}">
+//             <h2 class="name">${p.name}</h2>
+//             <h4>${this.about}<h4>
+//             <img src="${p.img_url}" height=250px width=300px/>
+//         </div>
+//         <button class="delete" data-id="${p.user.id}">Delete</button>
+//         `;
 // }
 
-function renderPet(){
-    container.innerHTML = `
-        <div data-id="${this.id}">
-            <h2 class="name">${this.name}</h2>
-            <h4>${this.about}<h4>
-            <img src=${this.img_url}/>
-        </div>
-        <button class="delete" data-id="${this.id}">Delete</button>
-        `
+// // handleClick = (e) => {
+// //     if (e.target.innerText === "Delete") {
+// //         this.deletePet(e)
+// //     }
+// // }
 
-        return this.element
-}
+// // attachToDom() 
+// //     this.renderPet()
+// //     Pet.container.appendChild(this.element)
 
-// handleClick = (e) => {
-//     if (e.target.innerText === "Delete") {
-//         this.deletePet(e)
-//     }
-// }
+// //     this.element.addEventListener('click', handleClick)
 
-// attachToDom() 
-//     this.renderPet()
-//     Pet.container.appendChild(this.element)
 
-//     this.element.addEventListener('click', handleClick)
-// }
-
-// handleClick = (e) => {
-//     if (e.target.innerText === "Delete") {
-//         this.deletePet(e)
-//     }
-// }
+// // handleClick = (e) => {
+// //     if (e.target.innerText === "Delete") {
+// //         this.deletePet(e)
+// //     }
+// // }
 
 
 
