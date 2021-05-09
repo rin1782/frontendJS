@@ -25,3 +25,7 @@ div#newPets {
 div#petsContainer {
     text-align: center;
 }
+
+.hidden {
+    display: none;
+}
